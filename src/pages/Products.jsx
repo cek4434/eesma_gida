@@ -1,5 +1,5 @@
 import products from '../data/products'
-import ProductCard from '../components/ProductCard'
+import ProductCarousel from '../components/ProductCarousel'
 
 function Products() {
   return (
@@ -17,11 +17,7 @@ function Products() {
 
       <section className="section" style={{ paddingTop: '2rem' }}>
         <div className="container">
-          <div className="product-grid">
-            {products.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <ProductCarousel products={products} />
         </div>
       </section>
     </>

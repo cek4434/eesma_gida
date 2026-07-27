@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import products from '../data/products'
-import ProductCard from '../components/ProductCard'
+import ProductCarousel from '../components/ProductCarousel'
 
 function Home() {
   const featured = products.slice(0, 6)
@@ -74,11 +74,7 @@ function Home() {
             Tam buğdaydan çavdara, tahıl karışımlarından malt ununa kadar fırın
             ihtiyaçlarınıza uygun ürünler.
           </p>
-          <div className="product-grid">
-            {featured.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
+          <ProductCarousel products={featured} />
           <div style={{ marginTop: '2rem' }}>
             <Link className="btn btn-outline" to="/urunler">
               Tüm Ürünler

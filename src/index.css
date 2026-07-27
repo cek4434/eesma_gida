@@ -417,6 +417,20 @@ p {
   margin-top: 2.5rem;
 }
 
+.product-carousel {
+  margin-top: 2.5rem;
+}
+
+.product-carousel-track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.product-carousel-dots {
+  display: none;
+}
+
 .product-card {
   background: var(--white);
   border-radius: var(--radius);
@@ -946,6 +960,11 @@ p {
     gap: 1rem;
   }
 
+  .product-carousel-track {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
   .baking-grid {
     grid-template-columns: 1fr;
   }
@@ -1141,6 +1160,58 @@ p {
     grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 1.75rem;
+  }
+
+  .product-carousel {
+    margin-top: 1.75rem;
+  }
+
+  .product-carousel-viewport {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .product-carousel-track {
+    display: flex;
+    gap: 0;
+    transition: transform 0.55s ease;
+    will-change: transform;
+  }
+
+  .product-carousel-slide {
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.1rem;
+  }
+
+  .product-carousel-slide .product-card {
+    height: 100%;
+  }
+
+  .product-carousel-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 1.1rem;
+  }
+
+  .product-carousel-dots button {
+    width: 0.55rem;
+    height: 0.55rem;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: rgba(30, 77, 43, 0.22);
+    cursor: pointer;
+    transition: width 0.25s ease, background 0.25s ease;
+  }
+
+  .product-carousel-dots button.active {
+    width: 1.35rem;
+    background: var(--green);
   }
 
   .product-card-media {
