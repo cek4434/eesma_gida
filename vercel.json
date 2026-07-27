@@ -1,0 +1,30 @@
+{
+  "redirects": [
+    {
+      "source": "/kurumsal/hakkimizda",
+      "destination": "/hakkimizda",
+      "permanent": true
+    },
+    {
+      "source": "/kurumsal/hakkimizda/",
+      "destination": "/hakkimizda",
+      "permanent": true
+    },
+    {
+      "source": "/kurumsal",
+      "destination": "/hakkimizda",
+      "permanent": true
+    },
+    {
+      "source": "/kurumsal/",
+      "destination": "/hakkimizda",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
