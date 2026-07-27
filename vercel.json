@@ -2,22 +2,22 @@
   "redirects": [
     {
       "source": "/kurumsal/hakkimizda",
-      "destination": "/hakkimizda",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/kurumsal/hakkimizda/",
-      "destination": "/hakkimizda",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/kurumsal",
-      "destination": "/hakkimizda",
+      "destination": "/",
       "permanent": true
     },
     {
       "source": "/kurumsal/",
-      "destination": "/hakkimizda",
+      "destination": "/",
       "permanent": true
     }
   ],
